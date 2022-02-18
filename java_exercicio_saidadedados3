@@ -1,0 +1,37 @@
+//autor: Gabriel Vinícius
+//linguagem: Java
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main{
+	public static void main(String[] args) {
+		
+		Scanner ler = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		String nome;
+		double sph, st;
+		int horast;
+		
+		System.out.println("=========================");
+		System.out.println("  CALCULADORA SALARIAL   ");
+		System.out.println("=========================");
+		
+		System.out.println("Digite o nome do funcionário:");
+		nome = ler.nextLine();
+		System.out.println("Digite o valor recebido por horas:");
+		sph = ler.nextDouble();
+		System.out.println("Digite a quantidade de horas totais trabalhadas por mês:");
+		horast = ler.nextInt();
+		
+		st = (double) sph * horast;
+		
+		System.out.printf("O salário total mensal do(a) funcionário(a) %s é igual a R$%.2f",nome,st);
+		
+		
+		
+
+	}
+}
+				
