@@ -1,0 +1,32 @@
+//autor: Gabriel Vinícius
+//linguagem: Java
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		double num;
+		
+		System.out.println("Digite um número entre 0 a 100 e veja em que intervalo de 25 em 25 ele se encontra:");
+		num = sc.nextDouble();
+		
+		if (num >=0 && num<=25) {
+			System.out.printf("O número %.2f se encontra no intervalo de 0 a 25",num);
+		}
+		else if (num>25 && num<=50) {
+			System.out.printf("O número %.2f se encontra no intervalo de 25 a 50",num);
+		}
+		else if (num>50 && num<=75) {
+			System.out.printf("O número %.2f se encontra no intervalo de 50 a 75",num);
+		}
+		else if (num>75 && num<=100) {
+			System.out.printf("O número %.2f se encontra no intervalo de 75 a 100",num);
+		}
+		}
+		
+		
+	}
