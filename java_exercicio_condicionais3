@@ -1,0 +1,52 @@
+//autor: Gabriel Vinícius
+//linguagem: Java
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		int codigo, qtd;
+		double total;
+		
+		
+		System.out.println("========================");
+		System.out.println("        CARDÁPIO        ");
+		System.out.println("========================");
+		System.out.println("|    [1] HOTDOG        |");
+		System.out.println("|    [2] HAMBURGUER    |");
+		System.out.println("|    [3] PIZZA         |");
+		System.out.println("|    [4] COXINHA       |");
+		System.out.println("========================");
+		
+		System.out.println("Digite o código do lanche desejado:");
+		codigo = sc.nextInt();
+		
+		System.out.println("Digite a quantidade desejada:");
+		qtd = sc.nextInt();
+		
+		if (codigo == 1) {
+			total = 5 * qtd;
+			System.out.println("O total a ser pago é de R$"+total);			
+		}
+		else if (codigo == 2) {
+			total = 8*qtd;
+			System.out.println("O total a ser pago é de R$"+total);
+		}
+		else if (codigo == 3) {
+			total = 20*qtd;
+			System.out.println("O total a ser pago é de R$"+total);
+		}
+		else if (codigo == 4) {
+			total = 3.50 * qtd;
+			System.out.println("O total a ser pago é de R$"+total);
+		}
+		
+	
+	
+	}
+}
