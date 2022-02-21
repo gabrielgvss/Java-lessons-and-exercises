@@ -1,0 +1,46 @@
+//autor: Gabriel Vinícius
+//linguagem: Java
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		int valor, qtd, pf;
+		
+		System.out.println("================================");
+		System.out.println("    CALCULADORA DE DESCONTO     ");
+		System.out.println("================================\n");
+		
+		System.out.print("Insira o valor do produto: R$");
+		valor = sc.nextInt();
+		
+		System.out.print("Insira a quantidade de produtos que serão levados: ");
+		qtd = sc.nextInt();
+		
+		switch(qtd) {
+		case 1:
+			pf = valor-(valor*5/100);
+			break;
+		case 2:
+			pf = qtd*valor-(qtd*valor*8/100);
+			break;
+		case 3,4,5:
+			pf = qtd*valor-(qtd*valor*15/100);
+			break;
+		default:
+			pf = qtd*valor-(qtd*valor*20/100);
+			break;
+		}
+		System.out.println("O valor total a ser pago será de R$"+pf);
+		
+		
+		
+		
+	}
+}
+		
