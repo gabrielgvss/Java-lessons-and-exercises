@@ -1,0 +1,43 @@
+//autor: Gabriel Vinícius
+//linguagem: Java
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		double salario, valort;
+		
+		System.out.println("===============================");
+		System.out.println("  CÁLCULO DE IMPOSTO DE RENDA  ");
+		System.out.println("===============================\n");
+		
+		System.out.println("Digite o valor(em reais) do seu salário mensal com até dois dígitos decimais:");
+		salario = sc.nextDouble();
+		
+		if (salario<=2000) {
+			System.out.println("Devido a sua faixa salarial, você está ISENTO do pagamento de Imposto de Renda");
+		}
+		else if (salario<=3000) {
+			valort = (salario - 2000)*8/100;
+			System.out.println("Devido a sua faixa salarial, a sua taxa de IR será 8%");
+			System.out.println("Deverá ser destinado para arrecadação o total de R$"+valort);
+		}
+		else if (salario<=4500) {
+			valort = (salario - 3000)*18/100 + 1000*8/100;
+			System.out.println("Devido a sua faixa salarial, a sua taxa de IR será 18%");
+			System.out.println("Deverá ser destinado para arrecadação o total de R$"+valort);
+		}
+		else if (salario>4500) {
+			valort = (salario - 4500.0) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;
+			System.out.println("Devido a sua faixa salarial, a sua taxa de IR será 28%");
+			System.out.println("Deverá ser destinado para arrecadação o total de R$"+valort);
+
+		}	
+	}
+}
+		
