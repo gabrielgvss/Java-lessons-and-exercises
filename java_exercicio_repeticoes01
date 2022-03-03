@@ -1,0 +1,32 @@
+//autor:Gabriel Vinícius
+//linguagem: Java
+
+package aula01;
+import java.util.Scanner;
+
+public class estruturaWhile {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+	
+		int senha=0;
+		
+		while(senha!=2002) {
+			System.out.println("Digite a sua senha de acesso: ");
+			senha = sc.nextInt();
+			
+			if (senha!=0) {
+				System.out.println("Senha Incorreta. Por favor, tente novamente!");
+			}
+		}
+		
+		System.out.println("Acesso permitido!");
+		
+		sc.close();
+		
+		
+		
+		
+
+		}
+	}
