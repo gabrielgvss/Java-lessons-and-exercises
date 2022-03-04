@@ -1,0 +1,44 @@
+//autor:Gabriel Vinícius
+//lingaugem:Java
+
+package aula02;
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class estruturaFor {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		String nome;
+		int idade;
+		double n1,n2,m;
+		
+		System.out.println("Digite a quantidade de alunos que deseja cadastrar: ");
+		int n = sc.nextInt();
+		
+		for (int i = 1; i<=n ;i=i+1) {
+			
+			System.out.printf("Digite o nome do %d°aluno: ",i);
+			nome = sc.next();
+			
+			System.out.printf("Digite a idade do %d°aluno: ",i);
+			idade = sc.nextInt();
+			
+			System.out.printf("Digite a primeira nota do %d°aluno: ",i);
+			n1 = sc.nextDouble();
+			
+			System.out.printf("Digite a segunda nota do %d°aluno: ",i);
+			n2 = sc.nextDouble();
+			
+			m = (n1+n2)/2;
+			
+			System.out.printf("A média do %d°aluno é igual a %.2f\n",i,m);
+			System.out.println("----------------------------------------");
+			}
+	}
+
+}
