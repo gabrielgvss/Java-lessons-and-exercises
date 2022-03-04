@@ -15,7 +15,7 @@ public class estruturaWhile {
 			System.out.println("Digite a sua senha de acesso: ");
 			senha = sc.nextInt();
 			
-			if (senha!=0) {
+			if (senha!=2002) {
 				System.out.println("Senha Incorreta. Por favor, tente novamente!");
 			}
 		}
