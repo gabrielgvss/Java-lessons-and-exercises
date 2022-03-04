@@ -1,0 +1,34 @@
+//autor:Gabriel Vinícius
+//linguagem:Java
+
+
+package aula03;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class fatorial {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int fatorial = 1;
+		int contador,numero;
+		
+		System.out.println("Digite o número que deseja saber seu resultado em fatorial:");
+		numero = sc.nextInt();
+		contador = numero;
+		
+		while(contador>1) {
+			fatorial = fatorial * contador;
+			contador = contador - 1;
+		}
+		System.out.println("O resultado em fatorial do número "+numero+" é igual a "+fatorial);
+
+		
+		
+
+	}
+
+}
