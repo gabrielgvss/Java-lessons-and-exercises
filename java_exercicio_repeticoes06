@@ -1,0 +1,36 @@
+//autor: Gabriel Vinícius
+//linguagem: Java
+
+package numeros_primos;
+import java.util.Scanner;
+
+public class identificador {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite um número para saber se este é primo ou não:");
+		int  num = sc.nextInt();
+		
+		int i;
+		int div = 0;
+		if(num==1) {
+			System.out.println("O número 1 não é primo, pois só é divisível por ele próprio.");
+		}
+		else {
+		for(i=2; i<num; i++) {
+			if (num % i == 0) {
+				div = div+1;	
+			}
+			
+		}
+		if (div!=0) {
+			System.out.println("O número "+num+" não é primo.");
+		}
+		else {
+			System.out.println("O número "+num+" é primo.");
+			
+		}
+	}
+	}
+}
