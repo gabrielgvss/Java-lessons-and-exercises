@@ -1,0 +1,37 @@
+//autor: Gabriel Vinícius
+//linguagem: Java
+
+package exercicio_for02;
+
+import java.util.Scanner;
+
+
+public class leitor_de_numeros {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int in = 0;
+		int out = 0;
+		
+		System.out.println("Informe uma quantidade de números que deseja digitar:");
+		int num = sc.nextInt();
+		
+		for(int i = 1; i<=num; i++ ) {
+			System.out.println("Informe o "+i+"° número:");
+			int n = sc.nextInt();
+			
+			if(n>=10 && n<=20) {
+				in++;
+			}
+			else {
+				out++;
+			}
+		}
+		System.out.println("Dos números digitados:");
+		System.out.println(out+" estão fora do intervalo de 10-20");
+		System.out.println(in+" estão dentro do intervalo de 10-20");
+		
+
+	}
+}
